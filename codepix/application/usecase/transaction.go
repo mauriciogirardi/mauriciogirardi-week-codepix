@@ -2,8 +2,9 @@ package usecase
 
 import (
 	"errors"
-	"github.com/codeedu/imersao/codepix-go/domain/model"
 	"log"
+
+	"github.com/codeedu/imersao/codepix-go/domain/model"
 )
 
 type TransactionUseCase struct {
@@ -33,7 +34,7 @@ func (t *TransactionUseCase) Register(accountId string, amount float64, pixKeyto
 		return transaction, nil
 	}
 
-	return nil, errors.New("unable to process this transaction")
+	return nil, errors.New("Unable to process this transaction")
 
 }
 
